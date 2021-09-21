@@ -9,7 +9,6 @@
         top: 0px;
         width: 100%;
         background-color: white;
-        border-bottom: 1px solid $gray-light;
         padding: 30px 0;
         z-index: 1000;
         transition: transform 0.4s;
@@ -38,7 +37,6 @@
             .nav-item {
                 @media (max-width: map-get($grid-breakpoints, "lg")) {
                     &:first-child {
-                        margin-top: 30px;
                     }
                 }
             }
@@ -89,7 +87,6 @@
                 left: 0;
                 width: 300%;
                 height: 1px;
-                background-color: $gray-light;
                 transform: translateX(-50%);
                 display: none;
                 border-top: 0em solid;
@@ -106,7 +103,6 @@
                 left: 0;
                 width: 300%;
                 height: 1px;
-                background-color: $gray-light;
                 transform: translateX(-50%);
                 display: none;
 
@@ -575,6 +571,9 @@
 
         @media (max-width: map-get($grid-breakpoints, "lg")) {
             display: block;
+            #top_menu > li.o_extra_menu_items {
+                 display: none; 
+            }
         }
 
         img {

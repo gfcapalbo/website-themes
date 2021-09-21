@@ -147,14 +147,14 @@ odoo.define("theme_kaizen.frontend", function(require) {
 
     window.addEventListener("scroll", function() {
         var currentScroll = window.pageYOffset;
-        if (currentScroll <= 0) {
+        if (currentScroll <= 0 && container) {
             container.classList.remove("scroll-up");
             body.classList.remove("scroll-up");
             return;
         }
 
         if (
-            currentScroll > lastScroll &&
+            currentScroll > lastScroll && container &&
             !container.classList.contains("scroll-down")
         ) {
             // Down
@@ -164,7 +164,7 @@ odoo.define("theme_kaizen.frontend", function(require) {
             body.classList.remove("scroll-up");
             body.classList.add("scroll-down");
         } else if (
-            currentScroll < lastScroll &&
+            currentScroll < lastScroll && container &&
             container.classList.contains("scroll-down")
         ) {
             // Up

@@ -59,7 +59,7 @@ $theme-colors: (
 
 $xs: 0;
 $sm: 576px;
-$md: 768px;
+$md: 991px;
 $lg: 992px;
 $xl: 1200px;
 
@@ -67,6 +67,6 @@ $grid-breakpoints: (
     xs: $xs,
     sm: $sm,
     md: $md,
-    lg: $md,
+    lg: $lg,
     xl: $xl,
 ) !default;
