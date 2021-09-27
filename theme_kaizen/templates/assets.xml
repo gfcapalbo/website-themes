@@ -68,6 +68,11 @@
             <link
                 rel="stylesheet"
                 type="text/scss"
+                href="/theme_kaizen/static/src/scss/layout/_megamenu.scss"
+            />
+            <link
+                rel="stylesheet"
+                type="text/scss"
                 href="/theme_kaizen/static/src/scss/components/_breadcrumb.scss"
             />
             <link
