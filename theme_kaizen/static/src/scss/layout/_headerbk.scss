@@ -3,127 +3,6 @@
 // -----------------------------------------------------------------------------
 
 #wrapwrap {
-    header#top {
-
-        .dropdown-toggle,
-        .navbar-nav > .nav-item:not(.dropdown-toggle) > .nav-link {
-            img.angle-icon {
-                display: inline-block;
-            }
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            letter-spacing: 0.03rem;
-            position: relative;
-
-            img {
-                transition: all 0.3s ease;
-            }
-
-            @media (max-width: map-get($grid-breakpoints, "lg")) {
-                &.btn,
-                &.btn:focus {
-                    color: #000 !important;
-                    background-color: transparent !important;
-                    border: none !important;
-                    letter-spacing: 0 !important;
-                }
-            }
-
-            &[aria-expanded="true"] {
-                font-weight: 700;
-                letter-spacing: 0;
-
-                &.btn {
-                    letter-spacing: 0.03rem;
-                }
-
-                img {
-                    transform: rotate(0);
-                }
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: -1px;
-                left: 0;
-                width: 300%;
-                height: 1px;
-                transform: translateX(-50%);
-                display: none;
-                border-top: 0em solid;
-
-                @media (max-width: map-get($grid-breakpoints, "lg")) {
-                    display: block;
-                }
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 300%;
-                height: 1px;
-                transform: translateX(-50%);
-                display: none;
-
-                @media (max-width: map-get($grid-breakpoints, "lg")) {
-                    display: block;
-                }
-            }
-
-            @media (max-width: map-get($grid-breakpoints, "lg")) {
-                justify-content: space-between;
-                padding: 12px 20px;
-                font-size: 18px;
-                font-weight: 700;
-                letter-spacing: 0;
-
-                img {
-                    transform: rotate(-90deg);
-                }
-
-                .angle-icon {
-                    margin-right: 8px;
-                }
-            }
-        }
-    }
-
-    // header reveal and hide
-    &.scroll-down {
-        header#top {
-            transform: translate(0, -125%);
-        }
-        @media (max-width: map-get($grid-breakpoints, "lg")) {
-            header#top {
-                transform: none;
-                border-bottom: none;
-            }
-            nav.navbar {
-                transform: translate(0, -125%);
-            }
-        }
-        .o_mega_menu {
-            transform: translate(0, -125%);
-        }
-    }
-
-    &.scroll-up {
-        header#top {
-            transform: none;
-        }
-        @media (max-width: map-get($grid-breakpoints, "lg")) {
-            header#top {
-                border-bottom: none;
-            }
-            nav.navbar {
-                transform: none;
-            }
-        }
-    }
 
 
 
@@ -154,7 +33,13 @@
         p.header-dropdown-link {
             margin-bottom: 5px;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: map-get($grid-breakpoints, "xl")) {
+                margin-bottom: 0;
+            }
+            @media (max-width: map-get($grid-breakpoints, "lg")) {
+                margin-bottom: 0;
+            }
+            @media (max-width: map-get($grid-breakpoints, "md")) {
                 margin-bottom: 0;
             }
         }
@@ -169,7 +54,7 @@
                 position: absolute;
                 top: 50%;
 
-                @media (max-width: 991.98px) {
+                @media (max-width: map-get($grid-breakpoints, "lg")) {
                     top: 33%;
                 }
 
@@ -180,6 +65,9 @@
             }
         }
     }
+    //end header dropdown
+
+
 
     // Mega-menu About Us Collapse
     .snippet_kaizen_menu_1 {
