@@ -249,7 +249,7 @@ display: flex;
         .nav-item {
             margin-right: 30px;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: map-get($grid-breakpoints, "xl")) {
                 margin-right: 20px;
             }
 
@@ -266,10 +266,7 @@ display: flex;
             width: 100%;
             background-color: white;
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-
             max-height: calc(100% - 90px);
-            overflow-y: auto;
-            overflow-x: hidden;
         }
 
         > .container {

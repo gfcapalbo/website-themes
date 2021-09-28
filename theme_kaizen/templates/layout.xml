@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template id="frontend_layout" inherit_id="portal.frontend_layout">
-        <xpath expr="//nav[hasclass('navbar')]" position="attributes">
-            <attribute name="class">navbar navbar-expand-md</attribute>
-        </xpath>
         <!-- Add custom toggler icon to user menu -->
         <xpath expr="//div[hasclass('js_usermenu')]/..//span/.." position="after">
             <img

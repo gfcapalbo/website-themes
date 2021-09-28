@@ -13,8 +13,7 @@
     .snippet_kaizen_menu_1 {
         .container {
             padding: 60px 15px;
-
-            @media (max-width: 1199.98px) {
+            @media (max-width: map-get($grid-breakpoints, "xl")) {
                 padding: 40px 15px;
             }
 
@@ -27,13 +26,12 @@
         .header-banner {
             font-size: 28px;
             max-width: 400px;
-
-            @media (min-width: 1200px) and (max-width: 1299.98px) {
+            @media (min-width: map-get($grid-breakpoints, "xl")) {
                 font-size: 24px;
                 max-width: 350px;
             }
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: map-get($grid-breakpoints, "xl")) {
                 font-size: 20px;
                 max-width: 280px;
             }
@@ -49,12 +47,11 @@
         .header-links {
             &-group:not(:last-child) {
                 margin-right: 80px;
-
-                @media (min-width: 1200px) and (max-width: 1299.98px) {
+                @media (min-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 60px;
                 }
 
-                @media (max-width: 1199.98px) {
+                @media (max-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 30px;
                 }
 
@@ -85,7 +82,7 @@
             padding: 60px 0;
             flex: 0 0 70%;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: map-get($grid-breakpoints, "xl")) {
                 padding: 40px 0;
             }
 
@@ -106,11 +103,11 @@
             &-group:not(:last-child) {
                 margin-right: 60px;
 
-                @media (min-width: 1200px) and (max-width: 1299.98px) {
+                @media (min-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 40px;
                 }
 
-                @media (max-width: 1199.98px) {
+                @media (max-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 20px;
                 }
 
@@ -146,15 +143,12 @@
             .h3 {
                 margin-bottom: 5px;
                 font-size: 28px;
-
-                @media (min-width: 1200px) and (max-width: 1299.98px) {
+                @media (min-width: map-get($grid-breakpoints, "xl")) {
                     font-size: 24px;
                 }
-
-                @media (max-width: 1199.98px) {
+                @media (max-width: map-get($grid-breakpoints, "xl")) {
                     font-size: 20px;
                 }
-
                 @media (max-width: map-get($grid-breakpoints, "lg")) {
                     font-size: 28px;
                 }
@@ -225,7 +219,6 @@
 
             p {
                 padding: 0 20px;
-
                 @media (max-width: map-get($grid-breakpoints, "md")) {
                     padding: 0;
                 }
@@ -235,15 +228,12 @@
                 font-size: 28px;
                 line-height: 1.4;
                 margin-bottom: 10px;
-
-                @media (min-width: 1200px) and (max-width: 1299.98px) {
+                @media (min-width: map-get($grid-breakpoints, "xl")) {
                     font-size: 24px;
                 }
-
-                @media (max-width: 1199.98px) {
+                @media (max-width: map-get($grid-breakpoints, "xl")) {
                     font-size: 20px;
                 }
-
                 @media (max-width: map-get($grid-breakpoints, "lg")) {
                     font-weight: 700;
                     font-size: 18px;
@@ -260,7 +250,6 @@
             @media (max-width: 1199.98px) {
                 flex: 0 0 50%;
             }
-
             @media (max-width: map-get($grid-breakpoints, "lg")) {
                 flex: 0;
             }
@@ -268,18 +257,15 @@
             &-group:not(:last-child) {
                 margin-right: 60px;
 
-                @media (min-width: 1200px) and (max-width: 1299.98px) {
+                @media (min-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 30px;
                 }
-
-                @media (max-width: 1199.98px) {
+                @media (max-width: map-get($grid-breakpoints, "xl")) {
                     margin-right: 15px;
                 }
-
                 @media (max-width: map-get($grid-breakpoints, "lg")) {
                     margin-right: 50px;
                 }
-
                 @media (max-width: map-get($grid-breakpoints, "md")) {
                     margin-right: 30px;
                 }
